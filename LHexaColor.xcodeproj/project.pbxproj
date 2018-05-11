@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D269A14F20A623CD00234B72 /* LHexaColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D269A14D20A623CD00234B72 /* LHexaColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D269A15620A6240400234B72 /* LHexaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269A15520A6240400234B72 /* LHexaColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D269A14A20A623CD00234B72 /* LHexaColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHexaColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D269A14D20A623CD00234B72 /* LHexaColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHexaColor.h; sourceTree = "<group>"; };
 		D269A14E20A623CD00234B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D269A15520A6240400234B72 /* LHexaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHexaColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				D269A14D20A623CD00234B72 /* LHexaColor.h */,
 				D269A14E20A623CD00234B72 /* Info.plist */,
+				D269A15520A6240400234B72 /* LHexaColor.swift */,
 			);
 			path = LHexaColor;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D269A14920A623CD00234B72 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D269A15620A6240400234B72 /* LHexaColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		D269A15320A623CD00234B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.LHexaColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		D269A15420A623CD00234B72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
